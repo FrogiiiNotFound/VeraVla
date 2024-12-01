@@ -1,0 +1,199 @@
+.home {
+    padding: 287px 0px 187px 0px;
+    background: url(../images/home/background-image.png) 0 0/cover no-repeat ;
+    background-attachment: fixed;
+    
+    &__intro {
+        font-weight: 600;
+        font-size: 18px;
+        color: #747d81;
+        max-width: 488px;
+        margin-bottom: 18px;
+
+        transform: translateY(100%);
+        opacity: 0;
+        transition: all 0.6s linear 0s;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 108px;
+        background: linear-gradient(180deg, #fff 31.75%, #56b6bb 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 30px 0px;
+        margin-bottom: 30px;
+
+        transform: translateY(100%);
+        opacity: 0;
+        transition: all 0.6s linear 0s;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+        max-width: 580px;
+        margin-bottom: 80px;
+
+        transform: translateY(100%);
+        opacity: 0;
+        transition: all 0.6s linear 0s;
+    }
+
+    &__guarantee {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 102px;
+        max-width: 472px;
+
+        transform: translateY(100%);
+        opacity: 0;
+        transition: all 0.6s linear 0s;
+    }
+
+    &__guarantee-title {
+        font-weight: 750;
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    &__guarantee-text {
+        font-weight: 500;
+        line-height: 172%;
+        color: #00e0ff;
+    }
+
+    &__guarantee-text span {
+        font-weight: 500;
+        line-height: 128%;
+        color: #00e0ff;
+    }
+
+    &__button {
+        transform: translateY(100%);
+        opacity: 0;
+        transition: all 0.8s linear 0s;
+    }
+}
+
+.button {
+    cursor: pointer;
+    border-radius: 9px;
+    max-width: 479px;
+    box-shadow: 0 7px 20px -7px #00e0ff;
+    background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
+    text-align: center;
+    padding: 20px 13px 25px 13px;
+    transition: all 0.2s linear;
+    transition: opacity,transform 0.6s linear;
+
+    &__link {
+        font-weight: 750;
+        font-size: 12px;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+    }
+
+    &:hover {
+        background: linear-gradient(180deg, rgba(0, 207, 235, 0.66) 0%, rgba(0, 207, 235, 0.66) 100%);
+    }
+}
+
+.home__intro._active,
+.home__title._active,
+.home__subtitle._active,
+.home__guarantee._active,
+.home__button._active {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+/* ============================================================================== */
+
+@media (max-width: 1000px) {
+    .home {
+
+        &__content {
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        &__intro {
+            margin: 0px auto 18px auto;
+        }
+        
+        &__title {
+            margin: 0px auto 50px auto;
+        }
+
+        &__subtitle {
+            margin: 0px auto 80px auto;
+        }
+
+        &__guarantee {
+            margin: 0px auto 100px auto;
+        }
+
+        &__button {
+            margin: 0px auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+
+        padding: 200px 0px 130px 0px;
+        
+        &__title {
+            font-size: 68px;
+            line-height: 101%;
+            padding: 0px 0px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__guarantee {
+            gap: 20px
+        }
+
+        &__guarantee-text {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .home {
+
+        &__logo {
+            display: none;
+        }
+
+        &__intro {
+            font-size: 16px;
+            margin: 0px auto 10px auto;
+        }
+
+        &__title {
+            font-size: 51px;
+            margin: 0px auto 30px auto;
+        }
+
+        &___text {
+            font-size: 16px;
+        }
+
+        &__guarantee {
+            margin-bottom: 258px;
+        }
+    }
+}

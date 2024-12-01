@@ -1,0 +1,50 @@
+//fonts
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: url('font/AvenirNextCyr-Demi/AvenirNextCyr-Demi.eot');
+	src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
+		url('font/AvenirNextCyr-Demi/AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+		url('font/AvenirNextCyr-Demi/AvenirNextCyr-Demi.woff') format('woff'),
+		url('font/AvenirNextCyr-Demi/AvenirNextCyr-Demi.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: url('font/AvenirNextCyr-Medium/AvenirNextCyr-Medium.eot');
+	src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr-Medium'),
+		url('font/AvenirNextCyr-Medium/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+		url('font/AvenirNextCyr-Medium/AvenirNextCyr-Medium.woff') format('woff'),
+		url('font/AvenirNextCyr-Medium/AvenirNextCyr-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: url('font/AvenirNextCyr-Heavy/AvenirNextCyr-Heavy.eot');
+	src: local('Avenir Next Cyr Heavy'), local('AvenirNextCyr-Heavy'),
+		url('font/AvenirNextCyr-Heavy/AvenirNextCyr-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('font/AvenirNextCyr-Heavy/AvenirNextCyr-Heavy.woff') format('woff'),
+		url('font/AvenirNextCyr-Heavy/AvenirNextCyr-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+// helpers
+@import './base/vars';
+@import './base/helpers';
+@import './base/reset';
+@import './base/repeat';
+
+// blocks
+@import './blocks/header';
+@import './blocks/home';
+@import './blocks/reasons';
+@import './blocks/advantages';
+@import './blocks/important';
+@import './blocks/us';
+@import './blocks/info';
+@import './blocks/author';
+@import './blocks/footer';
